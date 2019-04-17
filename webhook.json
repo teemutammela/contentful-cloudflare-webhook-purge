@@ -1,0 +1,52 @@
+{
+  "webhooks": [
+    {
+      "name": "Purge Cloudflare Cache",
+      "url": "https://api.cloudflare.com/client/v4/zones/CLOUDFLARE_ZONE_ID/purge_cache",
+      "httpBasicUsername": null,
+      "topics": [
+        "Entry.publish"
+      ],
+      "filters": [
+        {
+          "equals": [
+            {
+              "doc": "sys.environment.sys.id"
+            },
+            "master"
+          ]
+        }
+      ],
+      "transformation": {
+        "method": "DELETE",
+        "contentType": "application/json",
+        "includeContentLength": true,
+        "body": {
+          "purge_everything": true
+        }
+      },
+      "sys": {
+        "type": "WebhookDefinition",
+        "id": false,
+        "version": 1,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "8447ijx3djn4"
+          }
+        }
+      },
+      "headers": [
+        {
+          "key": "X-Auth-Email",
+          "value": "E-MAIL"
+        },
+        {
+          "key": "X-Auth-Key",
+          "value": "AUTH_KEY"
+        }
+      ]
+    }
+  ]
+}
