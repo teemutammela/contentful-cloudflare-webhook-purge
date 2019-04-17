@@ -44,7 +44,7 @@ contentful login
 contentful space use
 ```
 
-**3)** Import webhook to target space.
+**3)** Download [webhook.json](https://github.com/teemutammela/contentful-cloudflare-webhook-purge/blob/master/webhook.json) and import it to target space.
 
 ```shell
 contentful space import --content-file webhook.json
