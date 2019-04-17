@@ -62,6 +62,6 @@ contentful space import --content-file webhook.json
 
 **NOTE!** By default the webhook is configured to engage when an entry is updated. If you wish to change that behavior, you may edit the settings under the section _Triggers_.
 
-**NOTE!** By default the webhook is configured to apply to _master_ environment. If you wish to change that behavior, you may edit the settings under the section _Filters.
+**NOTE!** By default the webhook is configured to apply to _master_ environment. If you wish to change that behavior, you may edit the settings under the section _Filters_.
 
 **NOTE!** If you are delivering content from Contentful to multiple Cloudflare-enabled domains, you need to install a webhook for each domain that have unique _Zone IDs_ and _API Keys_. If you are installing multiple webhooks to the same space, it's highly recommend to change their names from _Purge Cloudflare Cache_ to e.g. _Purge Cloudflare Cache (Site Name)_ after installation.
