@@ -2,7 +2,7 @@
   "webhooks": [
     {
       "name": "Purge Cloudflare Cache",
-      "url": "https://api.cloudflare.com/client/v4/zones/CLOUDFLARE_ZONE_ID/purge_cache",
+      "url": "https://api.cloudflare.com/client/v4/zones/ZONE_ID/purge_cache",
       "httpBasicUsername": null,
       "topics": [
         "Entry.publish"
