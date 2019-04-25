@@ -15,6 +15,7 @@ Contentful is registered trademark of Contentful GmbH.
 * [teemu.tammela@auralcandy.net](mailto:teemu.tammela@auralcandy.net)
 * [www.auralcandy.net](https://www.auralcandy.net/)
 * [github.com/teemutammela](https://github.com/teemutammela)
+* [www.linkedin.com/in/teemutammela](https://www.linkedin.com/in/teemutammela/)
 * [t.me/teemutammela](http://t.me/teemutammela)
 
 ## Disclaimer
