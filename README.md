@@ -59,10 +59,10 @@ contentful space import --content-file webhook.json
 
 **7)** Look for the fields _X-Auth-Email_ and _X-Auth-Key_ under the section _Headers_ and replace them with Cloudflare account e-mail address and _API Key_.
 
-**8)** Click _Save_ and test the webhook by publishing any entry. Verify the webhook is working as intended under the section _Activity log_.
+**8)** Click _Save_ and test the webhook by publishing any entry. Verify that the webhook is working as intended under the section _Activity log_.
 
 **NOTE!** By default the webhook is configured to engage when an entry is updated. If you wish to change that behavior, you may edit the settings under the section _Triggers_.
 
 **NOTE!** By default the webhook is configured to apply to _master_ environment. If you wish to change that behavior, you may edit the settings under the section _Filters_.
 
-**NOTE!** If you are delivering content from Contentful to multiple Cloudflare-enabled domains, you need to install a webhook for each domain that have unique _Zone IDs_ and _API Keys_. If you are installing multiple webhooks to the same space, it's highly recommend to change their names from _Purge Cloudflare Cache_ to e.g. _Purge Cloudflare Cache (Site Name)_ after installation.
+**NOTE!** If you are delivering content from Contentful to multiple Cloudflare-enabled domains, you need to install a separate webhook for each domain that have unique _Zone IDs_ and _API Keys_. If you are installing multiple webhooks to the same space, it's highly recommend to rename them to e.g. _Purge Cloudflare Cache (Site Name)_ after installation.
