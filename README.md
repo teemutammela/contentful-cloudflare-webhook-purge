@@ -20,7 +20,7 @@ Contentful is registered trademark of Contentful GmbH.
 
 ## Disclaimer
 
-This guide comes with ABSOLUTELY NO WARRANTY. The author assumes no responsibility of data loss or any other unintended side-effect. This guide is based on [Cloudflare API V4](https://api.cloudflare.com/) and as such is subject to change.
+This guide comes with **absolutely no warranty**. The author assumes no responsibility of data loss or any other unintended side-effect. This guide is based on [Cloudflare API V4](https://api.cloudflare.com/) and as such is subject to change.
 
 ## Prequisites
 
@@ -41,14 +41,14 @@ This guide assumes you have already created a [Cloudflare](https://www.cloudflar
 **2)** Login to Contentful CLI and select the target space.
 
 ```shell
-contentful login
-contentful space use
+$ contentful login
+$ contentful space use
 ```
 
 **3)** Download [webhook.json](https://github.com/teemutammela/contentful-cloudflare-webhook-purge/blob/master/webhook.json) and import it to target space.
 
 ```shell
-contentful space import --content-file webhook.json
+$ contentful space import --content-file webhook.json
 ```
 
 **4)** Go to _Space settings → Webhooks_ in your target space and confirm a webhook called _Purge Cloudflare Cache_ has been installed.
